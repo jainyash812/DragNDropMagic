@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magic Drop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <marquee>
+        Note: Drag the card and Drop it in any of the below Card Bins to see
+        MAGIC.
+      </marquee>
+      <div class="logo-bar">
+        <h1 class="logo">MAGIC DROP</h1>
+        <span>Magic Drop Power: <span class="count"> 52</span></span>
+      </div>
+    </header>
+    <main>
+      <div id="notification"></div>
+      <div class="image-container"></div>
+      <div class="cardBin-container">
+        <h3>Card Bins ➡️</h3>
+        <img
+          draggable="false"
+          class="S card-bin"
+          id="100"
+          ondragover="event.preventDefault()"
+          src="https://image.shutterstock.com/image-vector/vector-spade-icon-260nw-646581166.jpg"
+          alt="Spades Section"
+        />
+        <img
+          draggable="false"
+          class="D card-bin"
+          id="101"
+          ondragover="event.preventDefault()"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Card_diamond.svg/174px-Card_diamond.svg.png"
+          alt="Diamond Section"
+        />
+        <img
+          draggable="false"
+          class="C card-bin"
+          id="102"
+          ondragover="event.preventDefault()"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Card_club.svg/1200px-Card_club.svg.png"
+          alt="Clubs Section"
+        />
+        <img
+          draggable="false"
+          class="H card-bin"
+          id="103"
+          ondragover="event.preventDefault()"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Card_heart.svg/866px-Card_heart.svg.png"
+          alt="Hearts Section"
+        /><img />
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
